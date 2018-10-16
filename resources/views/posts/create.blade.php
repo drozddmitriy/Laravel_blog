@@ -1,21 +1,33 @@
 @extends('loyouts.loyout')
-
+dd();
 @section('content')
-
-    <form action="">
+    <h2>Publish post:</h2>
+    <form action="/post" method="post">
+        {{csrf_field()}}
         <div class="form-group">
             <label for="title">Title</label>
-            <input type="text" name="title" id="title">
+            <input class="form-control" type="text" name="title" id="title">
+        </div>
+
+        <div class="form-group">
+            <label for="alias">Alias</label>
+            <input class="form-control" type="text" name="alias" id="alias">
         </div>
 
         <div class="form-group">
             <label for="intro">Intro:</label>
-            <textarea type="text" name="intro" id="intro"></textarea>
+            <textarea class="form-control" type="text" name="intro" id="intro"></textarea>
         </div>
 
         <div class="form-group">
             <label for="body">Body:</label>
-            <textarea type="text" name="body" id="body"></textarea>
+            <textarea class="form-control" type="text" name="body" id="body"></textarea>
         </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Post</button>
+        </div>
+
+        @include('loyouts.error')
     </form>
-    @endsection
+@endsection

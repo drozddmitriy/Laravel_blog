@@ -15,16 +15,19 @@ class PostsTableSeeder extends Seeder
             array(
                 [
                     'title' => 'Title 1',
+                    'alias' =>'php_is_awesome',
                     'intro' => 'some text',
                     'body' => 'some body'
                 ],
                 [
                     'title' => 'Title 2',
+                    'alias' =>'Title_2',
                     'intro' => 'some text',
                     'body' => 'some body'
                 ],
                 [
                 'title' => 'Title 3',
+                 'alias' =>'Title_3',
                 'intro' => 'some text',
                 'body' => 'some body'
                 ]

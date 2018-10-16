@@ -24,7 +24,8 @@
 
 <div class="jumbotron">
     <div class="container">
-        <h1>hello word</h1>
+        <h1>Laravel Blog</h1>
+        <h2>That my new blog</h2>
     </div>
 
 </div>
